@@ -1,0 +1,784 @@
+mixed-port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: "127.0.0.1:9090"
+ipv6: true
+unified-delay: true
+tcp-concurrent: true
+geodata-mode: true
+geo-auto-update: false
+geo-update-interval: 24
+proxies:
+- name: 🇭🇰 香港-广东专线 HGC
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32042
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港-广东专线 BGP 1
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32443
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港-上海专线 BGP 1
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34443
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港-广东专线 BGP 2
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32445
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港-上海专线 BGP 2
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34445
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港-广东专线 Akari
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32037
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港-上海专线 Akari
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34037
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港-广东专线 NeaRoute
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32029
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港-上海专线 NeaRoute
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34029
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港-广东专线 HKBN
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32000
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港-上海专线 HKBN
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34000
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港-广东专线 HKT
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32033
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港-上海专线 HKT
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34033
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港-广东专线 GCore
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32027
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港-上海专线 GCore
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34027
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国-广东专线 BGP 1
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32001
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国-上海专线 BGP 1
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34001
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国-广东专线 BGP 2
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32028
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国-上海专线 BGP 2
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34028
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国-广东专线 DAOport
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32031
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国-上海专线 DAOport
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34031
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国-广东专线 GCore
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32021
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇺🇸 美国-上海专线 GCore
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34021
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇨🇳 🇹🇼 台湾-广东专线 NeaRoute
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32003
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇨🇳 🇹🇼 台湾-上海专线 NeaRoute
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34003
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇨🇳 🇹🇼 台湾-广东专线 STUIX
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32040
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇨🇳 🇹🇼 台湾-上海专线 STUIX
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34040
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇯🇵 日本-广东专线 BGP
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32004
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇯🇵 日本-上海专线 BGP
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34004
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇯🇵 日本-广东专线 Akari
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32036
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇯🇵 日本-上海专线 Akari
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34036
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇯🇵 日本-广东专线 GCore
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32022
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇯🇵 日本-上海专线 GCore
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34022
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇭🇰 香港-上海专线 HGC
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34042
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇰🇷 韩国-广东专线 VUKR
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32005
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇰🇷 韩国-上海专线 VUKR
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34005
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇸🇬 新加坡-广东专线 BGP
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32007
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇸🇬 新加坡-上海专线 BGP
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34007
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯-广东专线 PQ
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32008
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇷🇺 俄罗斯-上海专线 PQ
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34008
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国-广东专线 BGP
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32009
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇫🇷 法国-上海专线 BGP
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34009
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国-广东专线 BGP
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32010
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国-上海专线 BGP
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34010
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国-广东专线 Scaleblade
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32047
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇬🇧 英国-上海专线 Scaleblade
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34047
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇨🇦 加拿大-广东专线 BGP
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32039
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇨🇦 加拿大-上海专线 BGP
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34039
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国-广东专线 BGP
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32011
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国-上海专线 BGP
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34011
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇦🇺 澳大利亚-广东专线 VUAU
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32012
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇦🇺 澳大利亚-上海专线 VUAU
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34012
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇦🇺 澳大利亚-广东专线 GCore
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32023
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇦🇺 澳大利亚-上海专线 GCore
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34023
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇲🇾 马来西亚-广东专线 Shin
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32038
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇲🇾 马来西亚-上海专线 Shin
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34038
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇵🇭 菲律宾-广东专线 Zenlayer
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32013
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇵🇭 菲律宾-上海专线 Zenlayer
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34013
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇵🇭 菲律宾-广东专线 Comfac
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32030
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇵🇭 菲律宾-上海专线 Comfac
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34030
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇹🇭 泰国-广东专线 Bangmod
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32043
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇹🇭 泰国-上海专线 Bangmod
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34043
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇨🇦 🇹🇷 土耳其-广东专线 Kapteyan
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32014
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇸🇪 🇹🇷 土耳其-上海专线 Kapteyan
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34014
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇨🇦 🇹🇷 土耳其-广东专线 GCore
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32026
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇸🇪 🇹🇷 土耳其-上海专线 GCore
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34026
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇸🇦 沙特-上海专线 STC
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34035
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇨🇦 🇦🇶 南极-广东专线 WARP
+  type: trojan
+  server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+  port: 32041
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: 🇸🇪 🇦🇶 南极-上海专线 WARP
+  type: trojan
+  server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+  port: 34041
+  password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+  sni: w1.ding-doc.com
+  skip-cert-verify: true
+  network: tcp
+  udp: true
+- name: SOCKS5 184.178.172.11:4145
+  type: socks5
+  server: 184.178.172.11
+  port: 4145
+  skip-cert-verify: false
+  udp: true
+dns:
+  enable: false
+  ipv6: false
+  enhanced-mode: fake-ip
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  fallback:
+    - 8.8.8.8
+    - 1.1.1.1
+proxy-groups:
+- name: 🚀 默认策略
+  type: select
+  proxies:
+  - 自动选择
+  - DIRECT
+- name: 自动选择
+  type: url-test
+  proxies:
+  - 🇭🇰 香港-广东专线 HGC
+  - 🇭🇰 香港-广东专线 BGP 1
+  - 🇭🇰 香港-上海专线 BGP 1
+  - 🇭🇰 香港-广东专线 BGP 2
+  - 🇭🇰 香港-上海专线 BGP 2
+  - 🇭🇰 香港-广东专线 Akari
+  - 🇭🇰 香港-上海专线 Akari
+  - 🇭🇰 香港-广东专线 NeaRoute
+  - 🇭🇰 香港-上海专线 NeaRoute
+  - 🇭🇰 香港-广东专线 HKBN
+  - 🇭🇰 香港-上海专线 HKBN
+  - 🇭🇰 香港-广东专线 HKT
+  - 🇭🇰 香港-上海专线 HKT
+  - 🇭🇰 香港-广东专线 GCore
+  - 🇭🇰 香港-上海专线 GCore
+  - 🇺🇸 美国-广东专线 BGP 1
+  - 🇺🇸 美国-上海专线 BGP 1
+  - 🇺🇸 美国-广东专线 BGP 2
+  - 🇺🇸 美国-上海专线 BGP 2
+  - 🇺🇸 美国-广东专线 DAOport
+  - 🇺🇸 美国-上海专线 DAOport
+  - 🇺🇸 美国-广东专线 GCore
+  - 🇺🇸 美国-上海专线 GCore
+  - 🇨🇳 🇹🇼 台湾-广东专线 NeaRoute
+  - 🇨🇳 🇹🇼 台湾-上海专线 NeaRoute
+  - 🇨🇳 🇹🇼 台湾-广东专线 STUIX
+  - 🇨🇳 🇹🇼 台湾-上海专线 STUIX
+  - 🇯🇵 日本-广东专线 BGP
+  - 🇯🇵 日本-上海专线 BGP
+  - 🇯🇵 日本-广东专线 Akari
+  - 🇯🇵 日本-上海专线 Akari
+  - 🇯🇵 日本-广东专线 GCore
+  - 🇯🇵 日本-上海专线 GCore
+  - 🇭🇰 香港-上海专线 HGC
+  - 🇰🇷 韩国-广东专线 VUKR
+  - 🇰🇷 韩国-上海专线 VUKR
+  - 🇸🇬 新加坡-广东专线 BGP
+  - 🇸🇬 新加坡-上海专线 BGP
+  - 🇷🇺 俄罗斯-广东专线 PQ
+  - 🇷🇺 俄罗斯-上海专线 PQ
+  - 🇫🇷 法国-广东专线 BGP
+  - 🇫🇷 法国-上海专线 BGP
+  - 🇬🇧 英国-广东专线 BGP
+  - 🇬🇧 英国-上海专线 BGP
+  - 🇬🇧 英国-广东专线 Scaleblade
+  - 🇬🇧 英国-上海专线 Scaleblade
+  - 🇨🇦 加拿大-广东专线 BGP
+  - 🇨🇦 加拿大-上海专线 BGP
+  - 🇩🇪 德国-广东专线 BGP
+  - 🇩🇪 德国-上海专线 BGP
+  - 🇦🇺 澳大利亚-广东专线 VUAU
+  - 🇦🇺 澳大利亚-上海专线 VUAU
+  - 🇦🇺 澳大利亚-广东专线 GCore
+  - 🇦🇺 澳大利亚-上海专线 GCore
+  - 🇲🇾 马来西亚-广东专线 Shin
+  - 🇲🇾 马来西亚-上海专线 Shin
+  - 🇵🇭 菲律宾-广东专线 Zenlayer
+  - 🇵🇭 菲律宾-上海专线 Zenlayer
+  - 🇵🇭 菲律宾-广东专线 Comfac
+  - 🇵🇭 菲律宾-上海专线 Comfac
+  - 🇹🇭 泰国-广东专线 Bangmod
+  - 🇹🇭 泰国-上海专线 Bangmod
+  - 🇨🇦 🇹🇷 土耳其-广东专线 Kapteyan
+  - 🇸🇪 🇹🇷 土耳其-上海专线 Kapteyan
+  - 🇨🇦 🇹🇷 土耳其-广东专线 GCore
+  - 🇸🇪 🇹🇷 土耳其-上海专线 GCore
+  - 🇸🇦 沙特-上海专线 STC
+  - 🇨🇦 🇦🇶 南极-广东专线 WARP
+  - 🇸🇪 🇦🇶 南极-上海专线 WARP
+  - SOCKS5 184.178.172.11:4145
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇭🇰 香港
+  type: url-test
+  proxies:
+  - 🇭🇰 香港-广东专线 HGC
+  - 🇭🇰 香港-广东专线 BGP 1
+  - 🇭🇰 香港-上海专线 BGP 1
+  - 🇭🇰 香港-广东专线 BGP 2
+  - 🇭🇰 香港-上海专线 BGP 2
+  - 🇭🇰 香港-广东专线 Akari
+  - 🇭🇰 香港-上海专线 Akari
+  - 🇭🇰 香港-广东专线 NeaRoute
+  - 🇭🇰 香港-上海专线 NeaRoute
+  - 🇭🇰 香港-广东专线 HKBN
+  - 🇭🇰 香港-上海专线 HKBN
+  - 🇭🇰 香港-广东专线 HKT
+  - 🇭🇰 香港-上海专线 HKT
+  - 🇭🇰 香港-广东专线 GCore
+  - 🇭🇰 香港-上海专线 GCore
+  - 🇭🇰 香港-上海专线 HGC
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇸🇬 新加坡
+  type: url-test
+  proxies:
+  - 🇸🇬 新加坡-广东专线 BGP
+  - 🇸🇬 新加坡-上海专线 BGP
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇯🇵 日本
+  type: url-test
+  proxies:
+  - 🇯🇵 日本-广东专线 BGP
+  - 🇯🇵 日本-上海专线 BGP
+  - 🇯🇵 日本-广东专线 Akari
+  - 🇯🇵 日本-上海专线 Akari
+  - 🇯🇵 日本-广东专线 GCore
+  - 🇯🇵 日本-上海专线 GCore
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: 🇺🇲 美国
+  type: url-test
+  proxies:
+  - 🇺🇸 美国-广东专线 BGP 1
+  - 🇺🇸 美国-上海专线 BGP 1
+  - 🇺🇸 美国-广东专线 BGP 2
+  - 🇺🇸 美国-上海专线 BGP 2
+  - 🇺🇸 美国-广东专线 DAOport
+  - 🇺🇸 美国-上海专线 DAOport
+  - 🇺🇸 美国-广东专线 GCore
+  - 🇺🇸 美国-上海专线 GCore
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+  - MATCH,🚀 默认策略
