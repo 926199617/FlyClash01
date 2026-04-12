@@ -1,0 +1,194 @@
+mixed-port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: "127.0.0.1:9090"
+ipv6: true
+unified-delay: true
+tcp-concurrent: true
+geodata-mode: true
+geo-auto-update: false
+geo-update-interval: 24
+
+proxies:
+  # ==================== 来自未分组.txt 的所有节点（已全部转换） ====================
+  - name: 🇭🇰 SN-香港-广东专线
+    type: trojan
+    server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+    port: 32443
+    password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+    sni: w1.ding-doc.com
+    skip-cert-verify: true
+    network: tcp
+    udp: true
+
+  - name: 🇭🇰 SN-香港-上海专线
+    type: trojan
+    server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+    port: 34443
+    password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+    sni: w1.ding-doc.com
+    skip-cert-verify: true
+    network: tcp
+    udp: true
+
+  - name: 🇺🇸 SN-美国-广东专线
+    type: trojan
+    server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+    port: 32001
+    password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+    sni: w1.ding-doc.com
+    skip-cert-verify: true
+    network: tcp
+    udp: true
+
+  - name: 🇺🇸 SN-美国-上海专线
+    type: trojan
+    server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+    port: 34001
+    password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+    sni: w1.ding-doc.com
+    skip-cert-verify: true
+    network: tcp
+    udp: true
+
+  - name: 🇯🇵 SN-日本-广东专线
+    type: trojan
+    server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+    port: 32004
+    password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+    sni: w1.ding-doc.com
+    skip-cert-verify: true
+    network: tcp
+    udp: true
+
+  - name: 🇯🇵 SN-日本-上海专线
+    type: trojan
+    server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+    port: 34004
+    password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+    sni: w1.ding-doc.com
+    skip-cert-verify: true
+    network: tcp
+    udp: true
+
+  - name: 🇰🇷 SN-韩国-广东专线
+    type: trojan
+    server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+    port: 32005
+    password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+    sni: w1.ding-doc.com
+    skip-cert-verify: true
+    network: tcp
+    udp: true
+
+  - name: 🇰🇷 SN-韩国-上海专线
+    type: trojan
+    server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+    port: 34005
+    password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+    sni: w1.ding-doc.com
+    skip-cert-verify: true
+    network: tcp
+    udp: true
+
+  - name: 🇸🇬 SN-新加坡-广东专线
+    type: trojan
+    server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+    port: 32007
+    password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+    sni: w1.ding-doc.com
+    skip-cert-verify: true
+    network: tcp
+    udp: true
+
+  - name: 🇸🇬 SN-新加坡-上海专线
+    type: trojan
+    server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+    port: 34007
+    password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+    sni: w1.ding-doc.com
+    skip-cert-verify: true
+    network: tcp
+    udp: true
+
+  - name: 🇬🇧 SN-英国-广东专线
+    type: trojan
+    server: 11f8ca15-c3b1-4891-a2e2-7948c32224f5.bnsepserv.com
+    port: 32010
+    password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+    sni: w1.ding-doc.com
+    skip-cert-verify: true
+    network: tcp
+    udp: true
+
+  - name: 🇬🇧 SN-英国-上海专线
+    type: trojan
+    server: 178321e7-ad80-42c8-b8d2-5ff43648a1c3.bnsepserv.com
+    port: 34010
+    password: b70fb9e4-4e51-4177-b2fc-756459d8f519
+    sni: w1.ding-doc.com
+    skip-cert-verify: true
+    network: tcp
+    udp: true
+
+  # SOCKS5 节点（从第一个文件保留的经典节点）
+  - name: SOCKS5 184.178.172.11:4145
+    type: socks5
+    server: 184.178.172.11
+    port: 4145
+    skip-cert-verify: false
+    udp: true
+
+proxy-groups:
+- name: 🚀 默认策略
+  type: select
+  proxies:
+  - 自动选择
+  - DIRECT
+
+- name: 自动选择
+  type: url-test
+  proxies:
+  - 🇭🇰 SN-香港-广东专线
+  - 🇭🇰 SN-香港-上海专线
+  - 🇺🇸 SN-美国-广东专线
+  - 🇺🇸 SN-美国-上海专线
+  - 🇯🇵 SN-日本-广东专线
+  - 🇯🇵 SN-日本-上海专线
+  - 🇰🇷 SN-韩国-广东专线
+  - 🇰🇷 SN-韩国-上海专线
+  - 🇸🇬 SN-新加坡-广东专线
+  - 🇸🇬 SN-新加坡-上海专线
+  - 🇬🇧 SN-英国-广东专线
+  - 🇬🇧 SN-英国-上海专线
+  - SOCKS5 184.178.172.11:4145
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+
+- name: 🇭🇰 香港
+  type: url-test
+  proxies:
+  - 🇭🇰 SN-香港-广东专线
+  - 🇭🇰 SN-香港-上海专线
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+
+- name: 🇺🇸 美国
+  type: url-test
+  proxies:
+  - 🇺🇸 SN-美国-广东专线
+  - 🇺🇸 SN-美国-上海专线
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+
+- name: 🇯🇵 日本
+  type: url-test
+  proxies:
+  - 🇯🇵 SN-日本-广东专线
+  - 🇯🇵 SN-日本-上海专线
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+
+rules:
+  - MATCH,🚀 默认策略
